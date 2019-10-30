@@ -32,8 +32,10 @@ function addCloseListener() {
 	var i;
 	for (i = 0; i < close.length; i++) {
 		close[i].onclick = function() {
-      			var div = this.parentElement;
-      			div.style.display = "none";
+      			var list = this.parentElement.parentElement;
+				var listItem = this.parentElement;
+				list.removeChild(listItem);
+      			//div.style.display = "none";
 		}
 	}
 }

@@ -42,6 +42,12 @@ ul li.checked {
   text-decoration: line-through;
 }
 
+ul li.checked:nth-child(even) {
+  background: #666;
+  color: #fff;
+  text-decoration: line-through;
+}
+
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
   content: '';
@@ -71,10 +77,11 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  background-color: #0000ff;
   padding: 30px 40px;
   color: white;
   text-align: center;
+  font-family: "Verdana"
 }
 
 /* Clear floats after the header */
