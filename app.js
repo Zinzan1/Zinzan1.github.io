@@ -16,7 +16,7 @@ rl.on('line', function(line) {
 
 rl.on('close', function() {
   // do something on finish here
-  console.log('arr', arr);
+  console.log('array', arr);
 });
 
 var server = http.createServer(function(req, res) {
